@@ -10,7 +10,7 @@
 const alexAge = 25;
 const alexMembershipID = "GYM2024-12345"
 const isRunningOnTreadmill = true;
-console.log(alexAge,alexMembership,isRunningOnTreadmill);
+console.log(alexAge,alexMembershipID,isRunningOnTreadmill);
 // ### 題目二：變數命名練習
 // - 瑜伽團課 - 300 元
 // - 重訓團課 - 500 元
