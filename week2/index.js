@@ -1,6 +1,7 @@
 // ### 題目一：比較運算子
 // 請依序告知以下 console.Log 會顯示什麼值，
 // 若不確定答案，可將 code 貼在 chrome console 顯示後，再回頭補知識點。
+
 let a = 9;
 let b = 13;
 console.log(a > 0);
