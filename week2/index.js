@@ -1,15 +1,16 @@
 // ### 題目一：比較運算子
 // 請依序告知以下 console.Log 會顯示什麼值，
 // 若不確定答案，可將 code 貼在 chrome console 顯示後，再回頭補知識點。
+
 let a = 9;
 let b = 13;
-console.log(a > 0);
-console.log(b > a);
-console.log(a + b > 1);
+console.log(a > 0);     //true
+console.log(b > a);     //true
+console.log(a + b > 1); //true
 let c = 51;
 let d = 163;
-console.log(c == d);
-console.log(c !== d);
+console.log(c == d);    //false
+console.log(c !== d);   
 let e = 28;
 let f = 45;
 console.log(f >= e);
