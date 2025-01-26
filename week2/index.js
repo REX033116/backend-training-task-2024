@@ -271,6 +271,6 @@ if (exerciseRecords[5].duration >= 30 && exerciseRecords[5].heartRate >= 130) {
 // 練習：判斷是否符合 533 原則
 let isCompliant; // 條件：運動次數至少 5 次 || 運動時間累績達標 >= 130;
 if(validDays>5 || heartRate>=130 ){
-    console.log(`小明的運動量是否達標: ${isCompliant}`);  
+    console.log(`小明的運動量是否達標:'true');  
 }
-console.log(`小明的運動量是否達標: ${isCompliant}`); // 輸出: 小明的運動量是否達標
+// 輸出: 小明的運動量是否達標
