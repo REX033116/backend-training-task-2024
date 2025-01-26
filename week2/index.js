@@ -188,13 +188,13 @@ console.log(performanceData);
 */
 const activities = {
       treadmill: {
-      '卡路里':10,
+      calorieBurn:10,
  },
       yoga:{
-      '卡路里':5,
+      calorieBurn:5,
  },
       cycling:{
-      '卡路里':8,
+      calorieBurn:8,
  }  
 };
 
@@ -208,6 +208,10 @@ const activities = {
 // 小明今天騎了 10 分鐘的腳踏車去健身房，並先跑了 30 分鐘的跑步機熱身，最後再參加了 40 分鐘的瑜伽團課，最後再騎 10 分鐘腳踏車回家。
 
 let calorieBurn = 0;
+calorieBurn += activities.cycling.calorieBurn * 10; 
+calorieBurn += activities.treadmill.calorieBurn * 30; 
+calorieBurn += activities.yoga.calorieBurn * 40; 
+calorieBurn += activities.cycling.calorieBurn * 10;
 
 // 練習：計算小明今日消耗的卡路里
 
@@ -244,7 +248,29 @@ if (exerciseRecords[0].duration >= 30 && exerciseRecords[0].heartRate >= 130) {
 
 // 練習：週二、週三、週四、週五、週六
 
-// 練習：判斷是否符合 533 原則
-let isCompliant; // 條件：運動次數至少 5 次 || 運動時間累績達標 >= 150;
+//週二
+if (exerciseRecords[1].duration >= 30 && exerciseRecords[1].heartRate >= 130) {
+  totalDuration += TuesdayDuration;
+  validDays += 1;
+//週三
+if (exerciseRecords[2].duration >= 30 && exerciseRecords[2].heartRate >= 130) {
+  totalDuration += WednesdayDuration;
+  validDays += 1;
+//沒給週四
+//週五
+if (exerciseRecords[4].duration >= 30 && exerciseRecords[4].heartRate >= 130) {
+  totalDuration += FridayDuration;
+  validDays += 1;
 
+//週六
+if (exerciseRecords[5].duration >= 30 && exerciseRecords[5].heartRate >= 130) {
+  totalDuration += SaturdayDuration;
+  validDays += 1;
+      
+
+// 練習：判斷是否符合 533 原則
+let isCompliant; // 條件：運動次數至少 5 次 || 運動時間累績達標 >= 130;
+if(validDays>5 || heartRate>=130 ){
+    console.log(`小明的運動量是否達標: ${isCompliant}`);  
+}
 console.log(`小明的運動量是否達標: ${isCompliant}`); // 輸出: 小明的運動量是否達標
